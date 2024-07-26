@@ -1,0 +1,24 @@
+/* styles for Home page only */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+  }
+  
+  .btn-primary {
+    background: #ff5722;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .btn-primary:hover {
+    background: #e64a19;
+  }
+  
+  /* Other Home page specific styles */
+  

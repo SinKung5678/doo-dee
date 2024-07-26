@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ลงทะเบียน - Doo Dee</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <h1 class="logo"><a href="/">Doo Dee</a></h1>
+        <ul class="nav-links">
+          <li><a href="/register">ลงทะเบียน</a></li>
+          <li><a href="/login">เข้าสู่ระบบ</a></li>
+          <li><a href="/about">เกี่ยวกับเรา</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <form class="register-form">
+      <h2>ลงทะเบียน</h2>
+      <div class="form-group">
+        <label for="name">ชื่อ</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">อีเมล</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">รหัสผ่าน</label>
+        <div class="password-container">
+          <input type="password" id="password" name="password" required>
+          <span id="togglePassword" class="eye-icon">👁️</span>
+        </div>
+      </div>
+      <button type="submit" class="btn-primary">ลงทะเบียน</button>
+      <div class="login-link">
+        <p>มีบัญชีอยู่แล้ว? <a href="/login">เข้าสู่ระบบ</a></p>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Doo Dee. สงวนลิขสิทธิ์.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
