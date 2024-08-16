@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบ - Doo Dee</title>
+    <link rel="stylesheet" href="login.css"> <!-- ลิงก์ไปยังไฟล์ CSS ที่แยกออกมา -->
+</head>
+<body>
+    <div class="login-container">
+        <h2>เข้าสู่ระบบ</h2>
+        <form action="#" method="post">
+            <label for="username">ชื่อผู้ใช้</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">รหัสผ่าน</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- คอนเทนเนอร์สำหรับ checkbox และ label -->
+            <div class="show-password-container">
+                <input type="checkbox" id="show-password">
+                <label for="show-password">แสดงรหัสผ่าน</label>
+            </div>
+
+            <button type="submit">เข้าสู่ระบบ</button>
+        </form>
+        <a href="index.html" class="back-link">กลับไปที่หน้าแรก</a>
+    </div>
+
+    <script>
+        // JavaScript สำหรับสลับการแสดงรหัสผ่าน
+        document.getElementById('show-password').addEventListener('click', function() {
+            var passwordField = document.getElementById('password');
+            if (this.checked) {
+                passwordField.type = 'text'; // แสดงรหัสผ่าน
+            } else {
+                passwordField.type = 'password'; // ซ่อนรหัสผ่าน
+            }
+        });
+    </script>
+</body>
+</html>
